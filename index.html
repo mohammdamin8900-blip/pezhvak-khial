@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فرم ثبت‌نام ادمین | پژواک خیال</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;padding:25px 15px;
+  background:#101018;color:#fff;
+  font-family:Tahoma,Arial,sans-serif;
+}
+main{
+  max-width:480px;margin:35px auto;
+  background:#1c1c29;padding:25px;
+  border:1px solid #39394c;border-radius:18px;
+}
+h1{text-align:center;color:#e8a2bd;font-size:23px}
+p{text-align:center;color:#bbb;line-height:2}
+label{display:block;margin-top:17px;color:#eee}
+input,textarea{
+  width:100%;margin-top:8px;padding:13px;
+  border:1px solid #49495d;border-radius:9px;
+  background:#11111b;color:white;font-size:15px;
+}
+button{
+  width:100%;margin-top:22px;padding:14px;
+  border:0;border-radius:10px;
+  background:#bd668e;color:white;
+  font-size:17px;font-weight:bold;
+}
+.note{font-size:12px;color:#aaa}
+</style>
+</head>
+<body>
+<main>
+<h1>🥀 پژواک خیال</h1>
+<p>فرم رسمی ثبت‌نام ادمین کانال<br>برای همکاری، فرم زیر را کامل کنید.</p>
+
+<form onsubmit="event.preventDefault();alert('فرم نمایشی آماده است؛ برای ارسال واقعی باید سرور متصل شود.');">
+<label>نام و نام خانوادگی</label>
+<input name="name" required>
+
+<label>سن</label>
+<input name="age" type="number" min="13" max="100" required>
+
+<label>آیدی سروش</label>
+<input name="shad_id" placeholder="@username" required>
+
+<label>سابقه مدیریت</label>
+<textarea name="experience" rows="3" required></textarea>
+
+<label>ساعات فعالیت روزانه</label>
+<input name="hours" placeholder="مثلاً ۲ تا ۴ ساعت" required>
+
+<button type="submit">ثبت درخواست ادمینی</button>
+</form>
+<p class="note">پس از اتصال سرور، درخواست‌ها برای مدیریت ارسال خواهند شد.</p>
+</main>
+</body>
+</html>
